@@ -88,7 +88,7 @@ def scrap_slowhop(page=0):
                     print(e)
         else:
             break
-    return sorted(scrap, key=lambda d: d['nowa cena'])
+    return sorted(scrap, key=lambda d: d['zameldowanie'])
 
 
 if __name__ == '__main__':
