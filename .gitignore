@@ -50,5 +50,7 @@ coverage.xml
 docs/_build/
 
 .idea
+.idea/
 
 *.xlsx
+SlowHopeLastMinutes.xlsx
