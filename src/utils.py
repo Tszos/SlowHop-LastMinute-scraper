@@ -4,6 +4,10 @@ import re
 from config import MAIN_PAGE_URL
 
 
+def get_pages_quantity(soup, element: str, element_number: int):
+    return int(soup.select(element)[element_number].get_text())
+
+
 def get_offer_url(source) -> dict:
     site = MAIN_PAGE_URL + source.select('.search-product')[0]['href']
     return {'strona': site}
